@@ -15,4 +15,3 @@ print_r($charmeleon->name . ' has ' . $charmeleon->health . ' health left <br>')
 echo $charmeleon->attack($pikachu, 1);
 
 print_r($pikachu->name . ' has ' . $pikachu->health . ' health left <br>');
-echo $charmeleon->attack($pikachu, 0);
