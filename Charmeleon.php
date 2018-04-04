@@ -15,7 +15,7 @@ class Charmeleon extends Pokemon{
 
 		$weakness = new Weakness('Water', 2);
 
-		$resistance = new Resistance('Lightining', 10);
+		$resistance = new Resistance('Lightning', 10);
 
 		$attacks = array( new Attack('Headbutt', 10), new Attack('Flare', 30) );
 

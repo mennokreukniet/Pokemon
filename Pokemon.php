@@ -25,7 +25,11 @@ class Pokemon {
 	  * @param Attack $attack the actual attack done.
 	  */
     public function attack($target, $attack){
-    	return $target->defend($this->energyType, $this->attacks[$attack], $this->name);
+    	if ($attack > count($this->attacks)){
+    		echo 'There are only ' . count($this->attacks) . ' attacks available (starting at 0). Please choose a valid attack value.<br>';
+    	}else{
+    		return $target->defend($this->energyType, $this->attacks[$attack], $this->name);
+    	}
     }
 
     /**
